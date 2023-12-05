@@ -60,7 +60,7 @@ async function displayVideo(data) {
   const likeCount = converViews(videoData.items[0].statistics.likeCount);
 
   youtubePlayer.innerHTML = `
-  <iframe
+  <ifram
     width="100%"
     height="100%"
     src="https://www.youtube.com/embed/${data.id.videoId}"
