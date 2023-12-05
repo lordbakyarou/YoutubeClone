@@ -127,6 +127,7 @@
   padding: 5px 2px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .profile-image {
@@ -159,6 +160,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
   top: 55px;
+  padding-bottom: 100px;
 }
 
 .sidebar-top {
@@ -174,7 +176,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  background: var(--border-color, #303030);
+  /* background: var(--border-color, #303030); */
 }
 
 .item {
@@ -273,9 +275,9 @@
   padding: 8px 24px;
   align-items: flex-start;
   gap: 10px;
-  color: var(--Gray-Color, #aaa);
+  color: var(--Gray-Color, white);
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -290,7 +292,7 @@
   cursor: pointer;
 }
 
-.subscription-channel :hover {
+.sidebar-subcriptions :hover {
   background: var(--border-color, #303030);
 }
 
@@ -360,9 +362,9 @@
   padding: 8px 24px;
   align-items: flex-start;
   gap: 10px;
-  color: var(--Gray-Color, #aaa);
+  color: var(--Gray-Color, white);
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -579,6 +581,73 @@
   line-height: normal;
 }
 
+.navigation-bottom {
+  display: flex;
+  padding-top: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.navigation-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.navigation-menu {
+  display: flex;
+  padding: 8px 8px 8px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.navigation-menu-item {
+  display: flex;
+  width: 192px;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.navigation-menu-icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.navigation-menu-icon-item {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  padding: 2px 2.34px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.navigation-menu-title {
+  display: flex;
+  width: 144px;
+  padding: 4px 0px;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.navigation-menu-title h3 {
+  color: var(--White-Color, #fff);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .search-filters::-webkit-scrollbar {
   display: none;
 }
@@ -620,5 +689,5 @@
 .border-line {
   width: 224px;
   height: 1px;
-  background: var(--border-color, white);
+  background: var(--border-color, #3f3f3f);
 }

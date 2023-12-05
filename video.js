@@ -61,8 +61,8 @@ async function displayVideo(data) {
 
   youtubePlayer.innerHTML = `
   <iframe
-    width="1000"
-    height="500"
+    width="100%"
+    height="100%"
     src="https://www.youtube.com/embed/${data.id.videoId}"
     frameborder="0"
     allowfullscreen
