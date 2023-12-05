@@ -437,7 +437,7 @@ async function setSecondaryVideos(data) {
       // console.log(item);
       const jsonString = JSON.stringify(item);
       localStorage.setItem("videoToWatch", jsonString);
-      window.location.href = "/video.html";
+      window.location.href = "YouTubeClone/video.html";
     });
 
     suggetionVideo.innerHTML = `<div class="suggetion-video">
