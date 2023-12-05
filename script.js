@@ -5,7 +5,7 @@ const searchInput = document.querySelector(".search-actual-input");
 
 // console.log(videoPage);
 
-const API_KEY = "AIzaSyBsbcpKgw2RasKfsqYBiv5gzCSOfn-cbfo";
+const API_KEY = "AIzaSyC_LKkKkMhyI3-iTkK-LAjIDZGfN_WVX20";
 const BASE_URL = "https://www.googleapis.com/youtube/v3";
 
 async function searchVideos(searchQuery) {
