@@ -11,6 +11,15 @@ Welcome to the YouTube Clone project! This project replicates some of the featur
 ## Live Demo
   https://lordbakyarou.github.io/YoutubeClone/
 
+## Screenshots
+
+![image](https://github.com/lordbakyarou/YoutubeClone/assets/70631103/855c4f56-56ce-40b5-97ca-9c24f06d59f6)
+
+![image](https://github.com/lordbakyarou/YoutubeClone/assets/70631103/df1a0f3d-0783-4441-9c76-e924f43b00b3)
+
+![image](https://github.com/lordbakyarou/YoutubeClone/assets/70631103/c0d9c4b6-f5b8-4a19-993e-73aea9be265d)
+
+
 ## Getting Started
 
 To get started with the YouTube Clone, follow these simple steps:
