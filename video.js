@@ -32,13 +32,13 @@ searchButton.addEventListener("click", () => {
 
 function goToHome() {
   localStorage.setItem("searchFromVideo", "");
-  window.location.href = "/";
+  window.location.href = "https://lordbakyarou.github.io/YoutubeClone//";
 }
 
 searchInput.addEventListener("keyup", (event) => {
   if (event.key === "Enter") {
     localStorage.setItem("searchFromVideo", searchInput.value);
-    window.location.href = "/";
+    window.location.href = "https://lordbakyarou.github.io/YoutubeClone//";
   }
 });
 
@@ -437,7 +437,7 @@ async function setSecondaryVideos(data) {
       // console.log(item);
       const jsonString = JSON.stringify(item);
       localStorage.setItem("videoToWatch", jsonString);
-      window.location.href = "/video.html";
+      window.location.href = "https://lordbakyarou.github.io/YoutubeClone//video.html";
     });
 
     suggetionVideo.innerHTML = `<div class="suggetion-video">
