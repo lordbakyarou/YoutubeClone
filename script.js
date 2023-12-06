@@ -191,6 +191,5 @@ function searchFilters(event) {
 function openVideo(item) {
   const jsonString = JSON.stringify(item);
   localStorage.setItem("videoToWatch", jsonString);
-  window.location.href =
-    "https://lordbakyarou.github.io/YoutubeClone/video.html";
+  window.location.href = "/video.html";
 }
