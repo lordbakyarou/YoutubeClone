@@ -7,20 +7,19 @@
 
 .custom-navbar {
   display: flex;
-  background-color: #0f0f0f;
+  background-color: var(--theme-color);
   justify-content: space-between;
   padding-inline: 20px;
   position: fixed;
   z-index: 99;
   width: 100vw;
-  /* right: 5px; */
 }
 
 .brand {
   display: inline-flex;
   padding-right: 0px;
   align-items: center;
-  background-color: #0f0f0f;
+  background-color: var(--theme-color);
 }
 
 .brand-button {
@@ -65,32 +64,33 @@
   width: 362px;
   height: 40px;
   border-radius: 2px 0px 0px 2px;
-  background: #121212;
+  background: var(--theme-color);
   outline: none;
-  border: 1px solid #272727;
+  border: 1px solid var(--theme-color-light);
   padding-left: 10px;
   align-items: center;
-  color: white;
+  color: var(--theme-color-text);
 }
 
 .search-button {
   display: flex;
   width: 50px;
-  height: 42px;
-  /* padding: 6px 13px; */
+  height: 29px;
+  padding: 6px 13px;
   justify-content: center;
   align-items: center;
-  background: #303030;
+  background: var(--theme-color-hover);
   cursor: pointer;
 }
 
 .search-via-audio {
   display: flex;
-  padding: 6px;
+  padding: 7px;
   align-items: flex-start;
+
   gap: 10px;
-  border-radius: 50%;
-  background-color: #272727;
+  border-radius: 40px;
+  background-color: var(--theme-color-hover);
 }
 
 .audio-logo {
@@ -107,11 +107,10 @@
   width: 204px;
   height: 40px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
   flex-shrink: 0;
   padding: 10px;
-  padding-right: 20px;
 }
 
 .option {
@@ -128,6 +127,7 @@
   padding: 5px 2px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .profile-image {
@@ -152,7 +152,7 @@
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 20px;
-  background-color: #0f0f0f;
+  background-color: var(--theme-color);
   overflow-y: scroll;
   justify-content: space-between;
   /* overflow-x: hidden; */
@@ -169,7 +169,7 @@
   /* align-items: flex-start; */
   flex-shrink: 0;
   /* gap: 70px; */
-  background-color: #0f0f0f;
+  background-color: var(--theme-color);
 }
 
 .video-player {
@@ -209,7 +209,7 @@
   padding: 3px 0px 2px 0px;
   align-items: flex-start;
   gap: 10px;
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-text);
   font-variant-numeric: stacked-fractions;
   font-feature-settings: "hlig" on, "dlig" on;
   font-family: Roboto;
@@ -236,7 +236,7 @@
 }
 
 .info-text h3 {
-  color: var(--Gray-Color, #aaa);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -300,7 +300,7 @@
 }
 
 .button-text h3 {
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-light-text);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -350,7 +350,7 @@
 }
 
 .channel-title h3 {
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -359,7 +359,7 @@
 }
 
 .channel-title h4 {
-  color: var(--Gray-Color, #aaa);
+  color: var(--theme-color-light-text);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -384,7 +384,7 @@
 }
 
 .subscribe h3 {
-  color: var(--White-Color, #fff);
+  color: white;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -403,7 +403,7 @@
 }
 
 .video-desc-text h3 {
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -421,7 +421,7 @@
 }
 
 .show-more h3 {
-  color: var(--Gray-Color, #aaa);
+  color: var(--theme-color-light-text);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -449,7 +449,7 @@
 }
 
 .count h3 {
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -468,7 +468,7 @@
 }
 
 .sort-by h3 {
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-light-text);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -513,14 +513,14 @@
   width: 950px;
   outline: none;
   border: none;
-  background-color: #0f0f0f;
-  color: white;
+  background-color: var(--theme-color);
+  color: var(--theme-color-text);
 }
 
 .comment-border {
   height: 1px;
   align-self: stretch;
-  background: var(--border-color, #303030);
+  background-color: var(--theme-color-light);
 }
 
 .comment-details {
@@ -535,7 +535,7 @@
 }
 
 .user-name h3 {
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 13px;
   font-style: normal;
@@ -544,7 +544,7 @@
 }
 
 .user-name h4 {
-  color: var(--Gray-Color, #aaa);
+  color: var(--theme-color-light-text);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -553,7 +553,7 @@
 }
 
 .actual-comment h3 {
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -579,7 +579,7 @@
 }
 
 .like-comment h3 {
-  color: var(--Gray-Color, #aaa);
+  color: var(--theme-color-light-text);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -594,7 +594,7 @@
 }
 
 .reply-comment h3 {
-  color: var(--Gray-Color, #aaa);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -636,8 +636,8 @@
 .search-filter {
   display: flex;
   align-items: center;
-  border: 0.3px solid var(--Gray-Color, #aaa);
-  background: var(--border-color, #303030);
+  border: 0.3px solid var(--theme-color-light-text);
+  background-color: var(--theme-color-hover);
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -646,7 +646,7 @@
 }
 
 .search-filter h3 {
-  color: white;
+  color: var(--theme-color-light-text);
 
   font-family: Roboto;
   font-size: 14px;
@@ -691,7 +691,7 @@
   position: relative;
   bottom: 30px;
   left: 125px;
-  background: var(--Black, #000);
+  background-color: var(--theme-color);
   display: inline-flex;
   padding: 3px 4px;
   align-items: flex-start;
@@ -701,7 +701,7 @@
 }
 
 .thumbnail-time h3 {
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 10px;
   font-style: normal;
@@ -718,7 +718,7 @@
 }
 
 .video-title h3 {
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -727,7 +727,7 @@
 }
 
 .video-channel-name h3 {
-  color: var(--Gray-Color, #aaa);
+  color: var(--theme-color-light-text);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -736,7 +736,7 @@
 }
 
 .video-views h3 {
-  color: var(--Gray-Color, #aaa);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -745,7 +745,7 @@
 }
 
 .video-publish-date h3 {
-  color: var(--Gray-Color, #aaa);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -762,14 +762,20 @@
 }
 
 .content::-webkit-scrollbar-track {
-  background-color: black; /* Set the color of the track (the area behind the thumb) */
+  background-color: var(
+    --theme-color
+  ); /* Set the color of the track (the area behind the thumb) */
 }
 
 .content::-webkit-scrollbar-thumb {
-  background-color: #888; /* Set the color of the thumb (the draggable handle) */
+  background-color: var(
+    --theme-color-light
+  ); /* Set the color of the thumb (the draggable handle) */
   border-radius: 6px; /* Set the border radius to round the corners of the thumb */
 }
 
 .content::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Set the color of the thumb on hover */
+  background-color: var(
+    --theme-color-light
+  ); /* Set the color of the thumb on hover */
 }

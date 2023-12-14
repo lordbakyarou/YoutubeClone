@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyAXAFs5BTtokEUmKNCftvjaM7Vp4_0woGk";
+const API_KEY = "AIzaSyDijmeEgM8AIsrm8BlNzMSLySkfJ4antY0";
 const BASE_URL = "https://www.googleapis.com/youtube/v3";
 
 let dataToGet;
@@ -32,13 +32,13 @@ searchButton.addEventListener("click", () => {
 
 function goToHome() {
   localStorage.setItem("searchFromVideo", "");
-  window.location.href = "https://lordbakyarou.github.io/YoutubeClone//";
+  window.location.href = "/YoutubeClone/";
 }
 
 searchInput.addEventListener("keyup", (event) => {
   if (event.key === "Enter") {
     localStorage.setItem("searchFromVideo", searchInput.value);
-    window.location.href = "https://lordbakyarou.github.io/YoutubeClone//";
+    window.location.href = "/YoutubeClone/";
   }
 });
 
@@ -58,6 +58,8 @@ async function displayVideo(data) {
   const formattedDate = convertTimestamp(videoData);
 
   const likeCount = converViews(videoData.items[0].statistics.likeCount);
+
+  document.title = data.snippet.title;
 
   youtubePlayer.innerHTML = `
   <iframe
@@ -437,7 +439,7 @@ async function setSecondaryVideos(data) {
       // console.log(item);
       const jsonString = JSON.stringify(item);
       localStorage.setItem("videoToWatch", jsonString);
-      window.location.href = "https://lordbakyarou.github.io/YoutubeClone//video.html";
+      window.location.href = "/YoutubeClone/video.html";
     });
 
     suggetionVideo.innerHTML = `<div class="suggetion-video">
@@ -562,3 +564,33 @@ function clickThumbnail(hh) {
   console.log(hh);
 }
 getDataFromStorage();
+console.log("hihhi");
+
+//dark-mode
+document.documentElement.style.setProperty("--theme-color", "#0f0f0f");
+
+document.documentElement.style.setProperty("--theme-color-text", "#fff");
+
+document.documentElement.style.setProperty("--theme-color-light", "#292929");
+
+document.documentElement.style.setProperty("--theme-color-light-text", "#aaa");
+
+document.documentElement.style.setProperty("--theme-color-hover", "#292929");
+
+document.documentElement.style.setProperty("--theme-color-logo", "#fff");
+
+//white-mode
+// document.documentElement.style.setProperty("--theme-color", "#fff");
+
+// document.documentElement.style.setProperty("--theme-color-text", "#000");
+
+// document.documentElement.style.setProperty("--theme-color-light", "#fff");
+
+// document.documentElement.style.setProperty(
+//   "--theme-color-light-text",
+//   "#7e7e7e"
+// );
+
+// document.documentElement.style.setProperty("--theme-color-hover", "#f2f2f2");
+
+// document.documentElement.style.setProperty("--theme-color-logo", "#000");

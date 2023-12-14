@@ -7,7 +7,7 @@
 
 .custom-navbar {
   display: flex;
-  background-color: #0f0f0f;
+  background-color: var(--theme-color);
   justify-content: space-between;
   padding-inline: 20px;
   position: fixed;
@@ -19,7 +19,7 @@
   display: inline-flex;
   padding-right: 0px;
   align-items: center;
-  background-color: #0f0f0f;
+  background-color: var(--theme-color);
 }
 
 .brand-button {
@@ -64,12 +64,12 @@
   width: 362px;
   height: 40px;
   border-radius: 2px 0px 0px 2px;
-  background: #121212;
+  background: var(--theme-color);
   outline: none;
-  border: 1px solid #272727;
+  border: 1px solid var(--theme-color-hover);
   padding-left: 10px;
   align-items: center;
-  color: white;
+  color: var(--theme-color-text);
 }
 
 .search-button {
@@ -79,7 +79,7 @@
   padding: 6px 13px;
   justify-content: center;
   align-items: center;
-  background: #303030;
+  background: var(--theme-color-hover);
   cursor: pointer;
 }
 
@@ -90,7 +90,7 @@
 
   gap: 10px;
   border-radius: 40px;
-  background-color: #272727;
+  background-color: var(--theme-color-hover);
 }
 
 .audio-logo {
@@ -144,6 +144,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 32px;
+  cursor: pointer;
 }
 
 .sidebar {
@@ -154,7 +155,7 @@
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
-  background-color: #0f0f0f;
+  background-color: var(--theme-color);
   position: fixed;
   z-index: 90;
   overflow-x: hidden;
@@ -203,7 +204,7 @@
   align-items: flex-start;
   gap: 10px;
   flex-shrink: 0;
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -236,11 +237,11 @@
 }
 
 .sidebar-top :hover {
-  background: var(--border-color, #303030);
+  background: var(--theme-color-hover);
 }
 
 .sidebar-top2 :hover {
-  background: var(--border-color, #303030);
+  background: var(--theme-color-hover);
 }
 
 .sidebar-top2 {
@@ -259,7 +260,7 @@
 }
 
 .sidebar-subscriptions :hover {
-  background: var(--border-color, #303030);
+  background: var(--theme-color-hover);
 }
 
 .subscription-title {
@@ -275,7 +276,7 @@
   padding: 8px 24px;
   align-items: flex-start;
   gap: 10px;
-  color: var(--Gray-Color, white);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 17px;
   font-style: normal;
@@ -293,7 +294,7 @@
 }
 
 .sidebar-subcriptions :hover {
-  background: var(--border-color, #303030);
+  background: var(--theme-color-hover);
 }
 
 .subscription-item {
@@ -329,7 +330,7 @@
   align-items: flex-start;
   gap: 10px;
   flex-shrink: 0;
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -346,7 +347,7 @@
 }
 
 .sidebar-more :hover {
-  background: var(--border-color, #303030);
+  background: var(--theme-color-hover);
 }
 
 .more-title {
@@ -362,7 +363,7 @@
   padding: 8px 24px;
   align-items: flex-start;
   gap: 10px;
-  color: var(--Gray-Color, white);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 17px;
   font-style: normal;
@@ -391,7 +392,7 @@
   width: auto;
   flex-direction: row;
   align-items: flex-start;
-  background: var(--Background-Color, #0f0f0f);
+  background-color: var(--theme-color);
   overflow-y: hidden;
   position: fixed;
   z-index: 90;
@@ -403,7 +404,7 @@
   display: flex;
   height: 66px;
   align-items: center;
-  background: var(--Background-Color, #0f0f0f);
+  background-color: var(--theme-color);
   width: 100vw;
   overflow-x: scroll;
   white-space: nowrap;
@@ -427,20 +428,20 @@
   align-items: flex-start;
   gap: 10px;
   border-radius: 10px;
-  background: #292929;
-  color: #030303;
+  background: var(--theme-color-hover);
+  color: var(--theme-color-light);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: white;
+  color: var(--theme-color-text);
 }
 
 .video-div {
   height: 100vh;
   max-width: 100vw;
-  background-color: #0f0f0f;
+  background-color: var(--theme-color);
   position: fixed;
   z-index: 80;
   top: 120px;
@@ -453,7 +454,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  background-color: #0f0f0f;
+  background-color: var(--theme-color);
   position: relative;
   top: 60px;
   left: 30px;
@@ -546,7 +547,7 @@
   padding-top: 12px;
   align-items: flex-start;
   gap: 10px;
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -563,7 +564,7 @@
 }
 
 .channel-name h3 {
-  color: var(--Gray-Color, #aaa);
+  color: var(--theme-color-light-text);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -573,7 +574,7 @@
 }
 
 .channel-name h2 {
-  color: var(--Gray-Color, #aaa);
+  color: var(--theme-color-light-text);
   font-family: Roboto;
   font-size: 12px;
   font-style: normal;
@@ -640,7 +641,7 @@
 }
 
 .navigation-menu-title h3 {
-  color: var(--White-Color, #fff);
+  color: var(--theme-color-text);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -657,16 +658,22 @@
 }
 
 .sidebar::-webkit-scrollbar-track {
-  background-color: black; /* Set the color of the track (the area behind the thumb) */
+  background-color: var(
+    --theme-color
+  ); /* Set the color of the track (the area behind the thumb) */
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-  background-color: #888; /* Set the color of the thumb (the draggable handle) */
+  background-color: var(
+    --theme-color-light-text
+  ); /* Set the color of the thumb (the draggable handle) */
   border-radius: 6px; /* Set the border radius to round the corners of the thumb */
 }
 
 .sidebar::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Set the color of the thumb on hover */
+  background-color: var(
+    --theme-color-light-text
+  ); /* Set the color of the thumb on hover */
 }
 
 .video-div::-webkit-scrollbar {
@@ -674,20 +681,26 @@
 }
 
 .video-div::-webkit-scrollbar-track {
-  background-color: black; /* Set the color of the track (the area behind the thumb) */
+  background-color: var(
+    --theme-color
+  ); /* Set the color of the track (the area behind the thumb) */
 }
 
 .video-div::-webkit-scrollbar-thumb {
-  background-color: #888; /* Set the color of the thumb (the draggable handle) */
+  background-color: var(
+    --theme-color-light-text
+  ); /* Set the color of the thumb (the draggable handle) */
   border-radius: 6px; /* Set the border radius to round the corners of the thumb */
 }
 
 .video-div::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* Set the color of the thumb on hover */
+  background-color: var(
+    --theme-color-light-text
+  ); /* Set the color of the thumb on hover */
 }
 
 .border-line {
   width: 224px;
   height: 1px;
-  background: var(--border-color, #3f3f3f);
+  background: var(--theme-color-light);
 }
